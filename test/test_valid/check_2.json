@@ -1,0 +1,10 @@
+{
+  "id": "M",
+  "alias": "MM",
+  "type": "no-value",
+  "format": "audio",
+  "values": [
+    {"value": "d"},
+    {"value": "u"}
+  ]
+}
