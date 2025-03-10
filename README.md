@@ -9,6 +9,7 @@ This package contains of the data specification for Verona API: Variable Info (t
 
 Read more:
 
+* [All interface specifications of Verona](https://verona-interfaces.github.io/) (German only)
 * [All specifications of IQB](https://iqb-specifications.github.io/) (German only)
 * [Learn about TBA](https://iqb-berlin.github.io/tba-info/) (German only)
 
