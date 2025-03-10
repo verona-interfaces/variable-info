@@ -2,7 +2,6 @@
 // options can be passed, e.g. {allErrors: true}
 import Ajv, { ValidateFunction } from 'ajv';
 import fs from 'fs';
-import { log, error } from "console";
 
 const ajv = new Ajv();
 const schemaFilename = process.argv[3];
