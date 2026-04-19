@@ -15,6 +15,10 @@ Read more:
 
 # Change log
 
+## 1.4.0
+
+* Add `visualAnchor`
+
 ## 1.3.0
 
 * Add new types: `no-value`, `coded`, `json`
