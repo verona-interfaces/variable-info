@@ -1,5 +1,5 @@
 {
-  "$id": "variable-info@verona@1.3",
+  "$id": "variable-info@verona@1.4",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "variable info for coding",
   "type": "object",
@@ -70,6 +70,10 @@
     "page": {
       "type": "string",
       "description": "Page of the unit, on which the variable is located."
+    },
+    "visualAnchor": {
+      "type": "string",
+      "description": "DOM Element attribute 'verona-visual-anchor' value to scroll to and highlight."
     }
   },
   "additionalProperties": false,

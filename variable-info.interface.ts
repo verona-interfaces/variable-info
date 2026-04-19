@@ -16,6 +16,7 @@ export interface VariableInfo {
   valuePositionLabels: string[];
   valuesComplete?: boolean;
   page?: string;
+  visualAnchor?: string;
 }
 
 export class VariableList {
