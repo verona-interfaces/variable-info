@@ -1,11 +1,12 @@
 {
-  "name": "@verona-interfaces/variable-info",
+  "name": "verona-variable-info",
   "author": "IQB - Institut zur Qualitätsentwicklung im Bildungswesen",
   "license": "MIT",
   "description": "Data interface for variable info in Verona Modules.",
   "scripts": {
     "test_schema": "jest test variable-info.schema.json ./test",
     "generate_docs": "asyncapi generate fromTemplate ./make_doc/asyncapi.yaml @asyncapi/html-template --param config=make_doc/asyncapi.config.json -o ./public --force-write --use-new-generator && cat make_doc/add.css >> ./public/css/global.min.css",
+    "prepare_publish_manual": "tsc --module commonjs && copy ./package_npm.json ./dist/package.json && copy ./README.md ./dist",
     "prepare_publish": "rm -rf dist/* && tsc --module commonjs && cp ./package_npm.json ./dist/package.json && cp ./README.md ./dist",
     "npm_publish": "cd dist && npm publish --access public"
   },

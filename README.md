@@ -12,13 +12,3 @@ Read more:
 * [All interface specifications of Verona](https://verona-interfaces.github.io/) (German only)
 * [All specifications of IQB](https://iqb-specifications.github.io/) (German only)
 * [Learn about TBA](https://iqb-berlin.github.io/tba-info/) (German only)
-
-# Change log
-
-## 1.4.0
-
-* Add `visualAnchor`
-
-## 1.3.0
-
-* Add new types: `no-value`, `coded`, `json`

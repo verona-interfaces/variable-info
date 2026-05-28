@@ -7,16 +7,14 @@ export interface VariableValue {
 export interface VariableInfo {
   id: string;
   alias?: string;
-  type: 'string' | 'integer' | 'number' | 'boolean' | 'attachment' | 'json' | 'no-value' | 'coded';
-  format: 'text-selection' | 'image' | 'capture-image' | 'audio' | 'ggb-file' | 'non-negative' |
-      'latex' | 'math-ml' | 'math-table' | 'math-text-mix' | 'ggb-variable' | '';
+  type: 'STRING' | 'INTEGER' | 'NUMBER' | 'BOOLEAN' | 'ATTACHMENT' | 'JSON' | 'NO_VALUE' | 'CODED';
+  format: 'TEXT_SELECTION' | 'IMAGE' | 'CAPTURE_IMAGE' | 'AUDIO' | 'GGB_FILE' | 'NON_NEGATIVE' |
+      'LATEX' | 'MATH_ML' | 'MATH_TABLE' | 'MATH_TEXT_MIX' | 'GGB_VARIABLE' | '';
   multiple: boolean;
   nullable: boolean;
   values: VariableValue[];
   valuePositionLabels: string[];
   valuesComplete?: boolean;
-  page?: string;
-  visualAnchor?: string;
 }
 
 export class VariableList {

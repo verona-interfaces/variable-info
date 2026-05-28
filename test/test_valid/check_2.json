@@ -1,8 +1,8 @@
 {
   "id": "M",
   "alias": "MM",
-  "type": "no-value",
-  "format": "audio",
+  "type": "NO_VALUE",
+  "format": "AUDIO",
   "values": [
     {"value": "d"},
     {"value": "u"}
