@@ -1,17 +1,19 @@
 {
-  "$id": "verona-variable-info@2.0",
+  "$id": "verona-variable-info@2.1",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Infos of a base variable to support link to item and coding",
   "type": "object",
   "properties": {
     "id": {
       "type": "string",
-      "pattern": "^[0-9a-zA-Z_]+$",
+      "minLength": 1,
+      "pattern": "^[0-9A-Za-z_-]+$",
       "description": "Identifier for the variable"
     },
     "alias": {
       "type": "string",
-      "pattern": "^[0-9a-zA-Z_]+$",
+      "minLength": 1,
+      "pattern": "^[0-9A-Za-z_-]+$",
       "description": "Alternative identifier for the variable"
     },
     "type": {

@@ -4,10 +4,11 @@
   "license": "MIT",
   "description": "Data interface for variable info in Verona Modules.",
   "scripts": {
+    "test": "jest",
     "test_schema": "jest test variable-info.schema.json ./test",
     "generate_docs": "asyncapi generate fromTemplate ./make_doc/asyncapi.yaml @asyncapi/html-template --param config=make_doc/asyncapi.config.json -o ./public --force-write --use-new-generator && cat make_doc/add.css >> ./public/css/global.min.css",
-    "prepare_publish_manual": "tsc --module commonjs && copy ./package_npm.json ./dist/package.json && copy ./README.md ./dist",
-    "prepare_publish": "rm -rf dist/* && tsc --module commonjs && cp ./package_npm.json ./dist/package.json && cp ./README.md ./dist",
+    "prepare_publish_manual": "tsc --module commonjs && copy ./package_npm.json ./dist/package.json && copy ./README.md ./dist && copy ./variable-info.schema.json ./dist && copy ./test/variable-validation-cases.json ./dist",
+    "prepare_publish": "rm -rf dist/* && tsc --module commonjs && cp ./package_npm.json ./dist/package.json && cp ./README.md ./dist && cp ./variable-info.schema.json ./dist && cp ./test/variable-validation-cases.json ./dist",
     "npm_publish": "cd dist && npm publish --access public"
   },
   "repository": {
