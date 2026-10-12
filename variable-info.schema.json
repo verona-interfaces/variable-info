@@ -44,6 +44,8 @@
         "MATH_TABLE",
         "MATH_TEXT_MIX",
         "GGB_VARIABLE",
+        "CHEM_ELEMENT_SYMBOLS",
+        "CHEM_MOLECULE",
         ""
       ],
       "description": "Data type format"
