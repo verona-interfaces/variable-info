@@ -1,6 +1,6 @@
 {
   "name": "@iqbspecs/variable-info",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "author": "IQB - Institut zur Qualitätsentwicklung im Bildungswesen",
   "license": "CC0 1.0",
   "description": "Data interface: variable-info",
@@ -12,6 +12,6 @@
     "url": "https://github.com/verona-interfaces/variable-info/issues"
   },
   "homepage": "https://github.com/verona-interfaces/variable-info#readme",
-  "main": "index.js",
-  "types": "index.d.ts"
+  "main": "variable-info.interface.js",
+  "types": "variable-info.interface.d.ts"
 }

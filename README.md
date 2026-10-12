@@ -7,6 +7,18 @@ This package contains of the data specification for Verona API: Variable Info (t
 * Schema documentation based on [AsyncAPI Generator](https://github.com/asyncapi/generator)
 * type definitions for TypeScript (see npm-link above)
 
+## Variable identifier validation
+
+Variable ids and aliases may contain ASCII letters, digits, `_` and `-`. They must contain at least one
+character and have no technical maximum length. Values are validated as supplied; they are not trimmed or
+renamed.
+
+The package exports `isValidVariableIdentifier(value)` for individual values and
+`validateVariableList(variables)` for complete lists. List validation returns machine-readable errors for
+empty or malformed identifiers, duplicate ids, duplicate aliases and collisions between public identifiers.
+Comparisons are case-insensitive. A variable's public identifier is its alias when present and its id otherwise.
+The package also contains `variable-validation-cases.json` as a shared conformance suite for implementations.
+
 Read more:
 
 * [All interface specifications of Verona](https://verona-interfaces.github.io/) (German only)

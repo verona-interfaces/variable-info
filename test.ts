@@ -2,10 +2,11 @@
 // options can be passed, e.g. {allErrors: true}
 import Ajv, { ValidateFunction } from 'ajv';
 import fs from 'fs';
+import path from 'path';
 
-const ajv = new Ajv();
-const schemaFilename = process.argv[3];
-const testDataFolder = process.argv[4];
+const ajv = new Ajv({ allowUnionTypes: true });
+const schemaFilename = process.argv[3] || path.join(__dirname, 'variable-info.schema.json');
+const testDataFolder = process.argv[4] || './test';
 
 describe(testDataFolder, () => {
   const schemaFileContent = fs.readFileSync(schemaFilename, 'utf8');
